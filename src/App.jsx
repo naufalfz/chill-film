@@ -22,6 +22,7 @@ function App() {
         <ProductionHouse/>
 
         <GenreMovieList/>
+        <hr className='border-gray-600'></hr>
 
         <Footer/>
     </div>
