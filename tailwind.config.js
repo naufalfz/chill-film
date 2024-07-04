@@ -8,6 +8,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require('tailwindcss-no-scrollbar')
+    require('tailwindcss-no-scrollbar'),
+            require('daisyui'),
   ],
 }
