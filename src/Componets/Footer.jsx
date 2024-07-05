@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from './../assets/Images/logo1.png'
 
 function Footer() {
    
@@ -7,7 +8,8 @@ function Footer() {
     <footer className="footer slate-900 text-base-content p-10">
      
     <aside>
-      <img src="/src/assets/Images/logo1.png" alt="Chill" />
+      <img src={logo} alt="Chill" />
+      
     
       <p>
     @2024 Chill All Rights Reserved.
