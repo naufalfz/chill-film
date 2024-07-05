@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'bg-primary':'#22282A',
+      },
+    },
   },
   plugins: [
     require('tailwindcss-no-scrollbar'),
