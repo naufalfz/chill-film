@@ -46,7 +46,7 @@ function Header() {
             <HeaderItem name={item.name} Icon={item.icon} />
         ))}
         </div>
-          <div className='flex md:hidden gap-5'>
+          <div className='flex md:hidden gap-1'>
         {menu.map((item,index)=>index<3&&(
             <HeaderItem name={''} Icon={item.icon} />
         ))}
@@ -62,14 +62,26 @@ function Header() {
         </div>
         </div>
         {/* Profile */}
-        <div>
+        <div className=' dropdown dropdown-end'> 
+        <div tabIndex={0} className='btn btn-ghost btn-circle avatar'>
             <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
             className='w-[40px] rounded-full cursor-pointer'/>
-        <div className=''>
-            <ul>
-                <li>
-
+        </div>
+            <div className='text-white'>
+            <ul 
+                    tabIndex='0'
+                    className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'>
+               <li>
+                    <a className='text-white justify-between'> 
+                    My Profile
+                    
+                    </a>
                 </li>
+                <li><a className='text-white'>Premium
+                <span className='badge'>❤</span>
+                </a>
+                </li>
+                <li><a className='text-white'>Logout</a></li>
             </ul>
 
         </div>
