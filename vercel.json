@@ -3,17 +3,17 @@
 
         {
             "source": "/",
-            "destination": "/"
+            "destination": "/home"
         },
 
         {
             "source": "/register",
-            "destination": "/register"
+            "destination": "/Register"
         },
 
         {
             "source": "/login",
-            "destination": "/login"
+            "destination": "/Login"
         }
 
     ]
