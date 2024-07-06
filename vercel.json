@@ -2,7 +2,7 @@
     "Routes": [
         {
             "src": "/",
-            "dest" "/"
+            "dest": "/"
         },
         {
             "src": "/login",
