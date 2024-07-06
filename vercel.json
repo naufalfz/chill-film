@@ -1,16 +1,19 @@
 {
-    "Routes": [
+    "Rewrite": [
+
         {
-            "src": "/",
-            "dest": "/"
+            "source": "/",
+            "destination": "/"
         },
+
         {
-            "src": "/login",
-            "dest": "/"
+            "source": "/register",
+            "destination": "/register"
         },
+
         {
-            "src": "/register",
-            "dest": "/"
+            "source": "/login",
+            "destination": "/login"
         }
 
     ]
