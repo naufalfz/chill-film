@@ -81,7 +81,7 @@ function Header() {
                 <span className='badge'>❤</span>
                 </a>
                 </li>
-                <li><a className='text-white'>Logout</a></li>
+                <li><a href='/login' className='text-white'>Logout</a></li>
             </ul>
 
         </div>

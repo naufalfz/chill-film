@@ -7,26 +7,71 @@ import Slider from './Componets/Slider'
 import ProductionHouse from './Componets/ProductionHouse'
 import GenreMovieList from './Componets/GenreMovieList'
 import Footer from './Componets/Footer'
-
+// import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Login from './Pages/Login'
+import Register from './Pages/Register'
+import Home from './Pages/Home'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    
     <div className="">
-        <Header/>
+     
+
+
+          <Router>
+            <Routes>
+
+{/*               
+              <Route path="/Login">
+              <Login />
+              </Route>
+               <Route path="/Register">
+               <Register />
+              </Route>
+              <Route path="/">
+              <Home />
+              </Route> */}
+
+
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
+
+             </Routes>
+           </Router>
+{/*              
+              <Header/>
+       
+            
+
         
-        <Slider/>
+             <Slider/>
 
-        <ProductionHouse/>
+             <ProductionHouse/>
 
-        <GenreMovieList/>
-        <hr className='border-gray-600'></hr>
+            <GenreMovieList/>
+            <hr className='border-gray-600'></hr>
 
-        <Footer/>
+            <Footer/>
+          
+          
+ */}
+
     </div>
+    
+   
   )
+
 }
 
 export default App
