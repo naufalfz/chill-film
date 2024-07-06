@@ -1,20 +1,5 @@
 {
-    "Rewrite": [
-
-        {
-            "source": "/",
-            "destination": "/home"
-        },
-
-        {
-            "source": "/register",
-            "destination": "/Register"
-        },
-
-        {
-            "source": "/login",
-            "destination": "/Login"
-        }
-
-    ]
-}
+    "rewrites":  [
+        {"source": "/(.*)", "destination": "/"}
+     ]
+ }
