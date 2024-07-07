@@ -2,11 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import logo from '../assets/Images/logo1.png';
 import google from '../assets/Images/googlecuy.png';
+import backgroundImage from '../assets/Images/bg-login.jpeg';
 
 function Register() {
   return (
-    <div className='text-white h-[100vh] flex items-center justify-center bg-cover bg-center h-screen' style={{backgroundImage: `url(/src/assets/Images/bg-login.jpeg)`}}> 
-    <div className='bg-slate-950 border border-slate-600 rounded-md p-14 shadow-lg backdrop-flter backdrop-blur-lg bg-opacity-30 relative'>
+    <div className='text-white h-[100vh] flex items-center justify-center bg-cover bg-center h-screen' style={{backgroundImage : `url(/src/assets/Images/bg-login.jpeg)`}}> 
+    <div className='bg-slate-950 border border-slate-600 rounded-md p-10 shadow-lg backdrop-flter backdrop-blur-lg bg-opacity-5 relative'>
     <div className='flex justify-center'> <img src={logo} alt="Chill" /></div>
    
       <h1 className='text-2xl font-bold text-center'> Sign up</h1>
